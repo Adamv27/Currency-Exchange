@@ -1,0 +1,115 @@
+body {
+    background-color: #3b3b3b;
+    font-family: 'Nunito Sans';
+    font-size: 30px;
+    user-select: none;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 15px;
+    grid-template-rows: 100px 25px 150px;
+    
+
+    width: 400px;
+    height: 500px;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #3f3f3f, #353535);
+    box-shadow: 5px 5px 21px #272727, -5px -5px 21px #4f4f4f;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    color: white;
+}
+
+#title {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+}
+
+.button {
+    justify-self: center;
+
+    background-color: #787878;
+    border: none;
+    color: white;
+
+    height: 25px;
+    width: 75px;
+    grid-column: 2;
+    grid-row: 2; 
+}
+
+.button:hover {
+    background-color: #313131;
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+.input {
+    grid-row: 2;
+
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    background-color: #787878;
+    color: white;
+    border: none;
+}
+
+#left {
+    justify-self: right;
+    grid-column: 1;
+}
+
+#right {
+    justify-self: left;
+    grid-column: 3;
+}
+
+#results {
+    position: absolute;
+    top: -27px;
+    left: -7px;
+    grid-row: 3;
+    grid-column: 1;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+.result {
+    width: 98px;
+    background-color: #323232;
+    border: 1px solid;
+    border-color: #252525;
+}
+
+.result:hover {
+    background-color: #242424;
+}
+
+#data {
+    font-size: 22;
+    grid-column: 1/4;
+    grid-row: 3;
+    justify-content: center;
+}
+
+#source {
+    color:white;
+    font-size: 16;
+    grid-row: 4;
+    
+    position: relative;
+    top: 125;
+    grid-column: 1/3;
+}
